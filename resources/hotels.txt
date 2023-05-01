@@ -1,0 +1,121 @@
++++
+H0001
+50
+4
+Hotel Transilvania
+Cluj-Napoca
++++
+H0002
+100
+5
+Athenee Palace Hilton
+Bucuresti
++++
+H0003
+80
+4
+Grand Hotel Continental
+Bucuresti
++++
+H0004
+60
+3
+Hotel Bella Muzica	
+Brasov
++++
+H0005
+62
+3
+Articus
+Craiova
++++
+H0006
+120
+4
+Hotel Ramada Parc
+Bucuresti
++++
+H0007
+40
+3
+Hotel Ibis
+Cluj-Napoca
++++
+H0008
+90
+5
+Hotel Kronwell
+Brasov
++++
+H0009
+70
+4
+Hotel Mercure
+Sibiu
++++
+H0010
+110
+5
+JW Marriott Bucharest
+Bucuresti
++++
+H0011
+55
+4
+Hotel Continental Forum
+Sibiu
++++
+H0012
+150
+5
+Radisson Blu Hotel
+Bucuresti
++++
+H0013
+30
+3
+Hotel City Plaza
+Cluj-Napoca
++++
+H0014
+65
+4
+Hotel Golden Tulip	
+Bucuresti
++++
+H0015
+95
+5
+Hilton Sibiu
+Sibiu
++++
+H0016
+74
+3
+Green House
+Craiova
++++
+H0017
+58
+4
+Hotel Crowne Plaza	
+Bucuresti
++++
+H0018
+50
+3
+Hotel Aro Palace
+Brasov
++++
+H0019
+85
+4
+Hotel Novotel
+Bucuresti
++++
+H0020
+70
+4
+Hotel Golden Tulip Ana Tower
+Sibiu
+---
