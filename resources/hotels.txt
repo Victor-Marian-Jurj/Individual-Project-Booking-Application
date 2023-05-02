@@ -20,7 +20,7 @@ Bucuresti
 H0004
 60
 3
-Hotel Bella Muzica	
+Hotel Bella Muzica
 Brasov
 +++
 H0005
@@ -80,7 +80,7 @@ Cluj-Napoca
 H0014
 65
 4
-Hotel Golden Tulip	
+Hotel Golden Tulip
 Bucuresti
 +++
 H0015
@@ -98,7 +98,7 @@ Craiova
 H0017
 58
 4
-Hotel Crowne Plaza	
+Hotel Crowne Plaza
 Bucuresti
 +++
 H0018

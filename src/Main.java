@@ -13,17 +13,17 @@ public class Main {
         HotelDataAccess dataAccessHotelDataAccess = new HotelDataAccess();
         HotelService hotelService = new HotelService(dataAccessHotelDataAccess);
 
-        ClientDataAccess dataAccessclientDataAccess = new ClientDataAccess();
-        ClientService clientService = new ClientService(dataAccessclientDataAccess);
+        ClientDataAccess dataAccessClientDataAccess = new ClientDataAccess();
+        ClientService clientService = new ClientService(dataAccessClientDataAccess);
 
-        ReservationDataAccess dataAccessreservationDataAccess = new ReservationDataAccess();
-        ReservationService reservationService = new ReservationService(dataAccessreservationDataAccess);
+        ReservationDataAccess dataAccessReservationDataAccess = new ReservationDataAccess();
+        ReservationService reservationService = new ReservationService(dataAccessReservationDataAccess);
 
-        PaymentDataAccess dataAccesspaymentDataAccess = new PaymentDataAccess();
-        PaymentService paymentService = new PaymentService(dataAccesspaymentDataAccess);
+        PaymentDataAccess dataAccessPaymentDataAccess = new PaymentDataAccess();
+        PaymentService paymentService = new PaymentService(dataAccessPaymentDataAccess);
 
-        RoomDataAccess dataAccessroomDataAccess = new RoomDataAccess();
-        RoomService roomService = new RoomService(dataAccessroomDataAccess);
+        RoomDataAccess dataAccessRoomDataAccess = new RoomDataAccess();
+        RoomService roomService = new RoomService(dataAccessRoomDataAccess);
 
         UserInterface userInterface = new UserInterface(hotelService, clientService, reservationService, paymentService, roomService);
 

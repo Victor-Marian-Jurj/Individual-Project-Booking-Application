@@ -13,7 +13,7 @@ public class PaymentComparator implements Comparator<Payment> {
         if (firstPayment.getRoomPrice() == secondPayment.getRoomPrice()) {
             String ssn1 = String.valueOf(firstPayment.getNumberOfNights());
             String ssn2 = String.valueOf(secondPayment.getNumberOfNights());
-            return  ssn1.compareTo(ssn2);
+            return - ssn1.compareTo(ssn2);
         }
         return 1;
     }

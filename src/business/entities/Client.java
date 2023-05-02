@@ -99,7 +99,7 @@ public class Client {
 
     private void validateClientId(String clientId) throws InvalidClientIdException {
         if(!isValidClientId(clientId)) {
-            throw new InvalidClientIdException((clientId));
+            throw new InvalidClientIdException(clientId);
         }
     }
 

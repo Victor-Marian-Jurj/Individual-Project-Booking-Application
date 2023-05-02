@@ -12,7 +12,7 @@ import java.util.List;
 public class HotelDataAccess {
     public List<Hotel> loadAllHotels() {
         List<Hotel> hotels = new ArrayList<>();
-        try (FileReader fileReader = new FileReader("resources/hotels.txt")) {
+        try (FileReader fileReader = new FileReader("resources/hotels-comparator.txt")) {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String currentLine = bufferedReader.readLine();
             while (!"---".equals(currentLine)) {
@@ -27,7 +27,7 @@ public class HotelDataAccess {
     }
 
     public void saveAllHotels(List<Hotel> hotels) {
-        try (FileWriter fileWriter = new FileWriter("resources/hotels.txt")) {
+        try (FileWriter fileWriter = new FileWriter("resources/hotels-comparator.txt")) {
             PrintWriter printWriter = new PrintWriter(fileWriter);
             for (Hotel currentHotel : hotels) {
                 writeHotel(printWriter, currentHotel);

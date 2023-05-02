@@ -214,10 +214,8 @@ public class UserInterface {
         try {
             Client newclient = readClient();
             clientService.addNewClient(newclient);
-//        } catch (ClientServiceException exception) {
-//            System.out.println(exception.getMessage());
         } catch (InvalidClientIdException exception) {
-            System.out.println(exception.getClientId() + "is not a valid ID.");
+            System.out.println(exception.getClientId() + " is not a valid ID.");
         }
     }
 
