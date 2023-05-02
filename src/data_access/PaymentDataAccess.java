@@ -10,7 +10,7 @@ import java.util.List;
 public class PaymentDataAccess {
     public List<Payment> loadAllPayments() {
         List<Payment> payments = new ArrayList<>();
-        try (FileReader fileReader = new FileReader("resources/payments-comparator.txt")) {
+        try (FileReader fileReader = new FileReader("resources/payments.txt")) {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String currentLine = bufferedReader.readLine();
             while (!"---".equals(currentLine)) {
@@ -25,7 +25,7 @@ public class PaymentDataAccess {
     }
 
     public void saveAllPayments(List<Payment> payments) {
-        try (FileWriter fileWriter = new FileWriter("resources/payments-comparator.txt")) {
+        try (FileWriter fileWriter = new FileWriter("resources/payments.txt")) {
             PrintWriter printWriter = new PrintWriter(fileWriter);
             for (Payment currentPayment : payments) {
                 writePayment(printWriter, currentPayment);
