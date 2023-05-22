@@ -1,5 +1,4 @@
 
-import business.entities.Hotel;
 import business.services.*;
 import data_access.*;
 import user_interface.UserInterface;
@@ -13,8 +12,8 @@ public class Main {
         HotelDataAccess dataAccessHotelDataAccess = new HotelDataAccess();
         HotelService hotelService = new HotelService(dataAccessHotelDataAccess);
 
-        ClientDataAccess dataAccessClientDataAccess = new ClientDataAccess();
-        ClientService clientService = new ClientService(dataAccessClientDataAccess);
+        ClientDataAccessTXT dataAccessClientDataAccessTXT = new ClientDataAccessTXT();
+        ClientService clientService = new ClientService(dataAccessClientDataAccessTXT);
 
         ReservationDataAccess dataAccessReservationDataAccess = new ReservationDataAccess();
         ReservationService reservationService = new ReservationService(dataAccessReservationDataAccess);

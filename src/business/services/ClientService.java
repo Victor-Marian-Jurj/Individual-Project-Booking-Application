@@ -1,36 +1,36 @@
 package business.services;
 
 import business.entities.Client;
-import data_access.ClientDataAccess;
+import data_access.ClientDataAccessTXT;
 
 import java.util.List;
 import java.util.Objects;
 
 public class ClientService {
 
-    private final ClientDataAccess clientDataAccess;
+    private final ClientDataAccessTXT clientDataAccessTXT;
 
-    public ClientService(ClientDataAccess clientDataAccess) {
-        this.clientDataAccess = clientDataAccess;
+    public ClientService(ClientDataAccessTXT clientDataAccessTXT) {
+        this.clientDataAccessTXT = clientDataAccessTXT;
     }
 
     public List<Client> getClients() {
-        List<Client> clients = clientDataAccess.loadAllClients();
-        clientDataAccess.saveAllClients(clients);
+        List<Client> clients = clientDataAccessTXT.loadAllClients();
+        clientDataAccessTXT.saveAllClients(clients);
         return clients;
     }
     public void addNewClient(Client newClient) {
-        List<Client> clients = clientDataAccess.loadAllClients();
+        List<Client> clients = clientDataAccessTXT.loadAllClients();
         clients.add(newClient);
-        clientDataAccess.saveAllClients(clients);
+        clientDataAccessTXT.saveAllClients(clients);
     }
 
     public void removeExistingClient(String clientId) {
-        List<Client> clients = clientDataAccess.loadAllClients();
+        List<Client> clients = clientDataAccessTXT.loadAllClients();
         int index = getClientIndex(clients, clientId);
         if (index != -1) { // if found
             clients.remove(index);
-            clientDataAccess.saveAllClients(clients);
+            clientDataAccessTXT.saveAllClients(clients);
         }
     }
 
