@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        HotelDataAccess dataAccessHotelDataAccess = new HotelDataAccess();
+        HotelDataAccessSQL dataAccessHotelDataAccess = new HotelDataAccessSQL();
         HotelService hotelService = new HotelService(dataAccessHotelDataAccess);
 
         ClientDataAccessSQL dataAccessClientDataAccess = new ClientDataAccessSQL();
