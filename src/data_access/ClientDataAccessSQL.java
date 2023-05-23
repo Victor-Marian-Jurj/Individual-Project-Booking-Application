@@ -2,16 +2,19 @@ package data_access;
 
 import business.entities.Client;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ClientDataAccessSQL extends ClientDataAccess{
 
     public List<Client> loadAllClients() {
+        System.out.println("loadAllClients - dummy SQL implementation");
         //JDBC implementation
-      return null;
+      return new ArrayList<>();
     }
 
     public void saveAllClients(List<Client> clients) {
+        System.out.println("saveAllClients - dummy SQL implementation");
         //JDBC implementation
 
     }
