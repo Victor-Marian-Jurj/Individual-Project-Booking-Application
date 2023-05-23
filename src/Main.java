@@ -12,7 +12,7 @@ public class Main {
         HotelDataAccess dataAccessHotelDataAccess = new HotelDataAccess();
         HotelService hotelService = new HotelService(dataAccessHotelDataAccess);
 
-        ClientDataAccessTXT dataAccessClientDataAccess = new ClientDataAccessTXT();
+        ClientDataAccessSQL dataAccessClientDataAccess = new ClientDataAccessSQL();
         ClientService clientService = new ClientService(dataAccessClientDataAccess);
 
         ReservationDataAccess dataAccessReservationDataAccess = new ReservationDataAccess();
