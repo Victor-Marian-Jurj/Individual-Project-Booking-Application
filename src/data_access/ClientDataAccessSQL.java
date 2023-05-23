@@ -5,7 +5,7 @@ import business.entities.Client;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClientDataAccessSQL extends ClientDataAccess{
+public class ClientDataAccessSQL implements ClientDataAccess{
 
     public List<Client> loadAllClients() {
         System.out.println("loadAllClients - dummy SQL implementation");

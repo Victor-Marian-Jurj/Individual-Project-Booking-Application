@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ClientDataAccessTXT extends ClientDataAccess{
+public class ClientDataAccessTXT implements ClientDataAccess{
 
     @Override
     public List<Client> loadAllClients() {
