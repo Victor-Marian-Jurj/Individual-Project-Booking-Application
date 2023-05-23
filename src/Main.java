@@ -15,10 +15,10 @@ public class Main {
         ClientDataAccessSQL dataAccessClientDataAccess = new ClientDataAccessSQL();
         ClientService clientService = new ClientService(dataAccessClientDataAccess);
 
-        ReservationDataAccess dataAccessReservationDataAccess = new ReservationDataAccess();
+        ReservationDataAccessSQL dataAccessReservationDataAccess = new ReservationDataAccessSQL();
         ReservationService reservationService = new ReservationService(dataAccessReservationDataAccess);
 
-        PaymentDataAccess dataAccessPaymentDataAccess = new PaymentDataAccess();
+        PaymentDataAccessSQL dataAccessPaymentDataAccess = new PaymentDataAccessSQL();
         PaymentService paymentService = new PaymentService(dataAccessPaymentDataAccess);
 
         RoomDataAccess dataAccessRoomDataAccess = new RoomDataAccess();
