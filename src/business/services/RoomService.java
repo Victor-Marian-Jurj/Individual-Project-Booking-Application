@@ -4,7 +4,6 @@ package business.services;
 import business.entities.Room;
 import data_access.RoomDataAccess;
 import java.util.List;
-import java.util.Objects;
 
 public class RoomService {
     private final RoomDataAccess roomDataAccess;

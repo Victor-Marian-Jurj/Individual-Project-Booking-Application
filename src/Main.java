@@ -21,7 +21,7 @@ public class Main {
         PaymentDataAccessSQL dataAccessPaymentDataAccess = new PaymentDataAccessSQL();
         PaymentService paymentService = new PaymentService(dataAccessPaymentDataAccess);
 
-        RoomDataAccess dataAccessRoomDataAccess = new RoomDataAccess();
+        RoomDataAccessSQL dataAccessRoomDataAccess = new RoomDataAccessSQL();
         RoomService roomService = new RoomService(dataAccessRoomDataAccess);
 
         UserInterface userInterface = new UserInterface(hotelService, clientService, reservationService, paymentService, roomService);
