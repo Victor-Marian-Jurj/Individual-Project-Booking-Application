@@ -4,14 +4,9 @@ import business.entities.Client;
 
 import java.util.List;
 
-public class ClientDataAccess {
-    public List<Client> loadAllClients() {
-    //empty implementation
-        return null;
-    }
+public abstract class ClientDataAccess {
+    public abstract List<Client> loadAllClients();
 
-    public void saveAllClients(List<Client> clients) {
-    //empty implementation
 
-    }
+    public abstract void saveAllClients(List<Client> clients);
 }
