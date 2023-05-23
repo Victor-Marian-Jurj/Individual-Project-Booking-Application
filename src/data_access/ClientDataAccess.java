@@ -4,15 +4,14 @@ import business.entities.Client;
 
 import java.util.List;
 
-public class ClientDataAccessSQL extends ClientDataAccess{
-
+public class ClientDataAccess {
     public List<Client> loadAllClients() {
-        //JDBC implementation
-      return null;
+    //empty implementation
+        return null;
     }
 
     public void saveAllClients(List<Client> clients) {
-        //JDBC implementation
+    //empty implementation
 
     }
 }

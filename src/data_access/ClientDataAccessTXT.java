@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+public class ClientDataAccessTXT extends ClientDataAccess{
 
-public class ClientDataAccessTXT {
-
+    @Override
     public List<Client> loadAllClients() {
         List<Client> clients = new ArrayList<>();
         try (FileReader fileReader = new FileReader("resources/clients.txt")) {
@@ -34,6 +34,7 @@ public class ClientDataAccessTXT {
         return clients;
     }
 
+    @Override
     public void saveAllClients(List<Client> clients) {
         try (FileWriter fileWriter = new FileWriter("resources/clients.txt")) {
             PrintWriter printWriter = new PrintWriter(fileWriter);
@@ -55,18 +56,7 @@ public class ClientDataAccessTXT {
         LocalDate birthDay = LocalDate.parse(bufferedReader.readLine());
 
         return new Client(clientId, firstName, lastName, phoneNumber, emailAdress, birthDay);
-
-//        LocalDate birthDay = readLocalDate(bufferedReader);
-
     }
-
-//    private LocalDate readLocalDate(BufferedReader bufferedReader) throws IOException {
-//        int year = Integer.parseInt(bufferedReader.readLine());
-//        int month = Integer.parseInt(bufferedReader.readLine());
-//        int dayOfMonth = Integer.parseInt(bufferedReader.readLine());
-//        return LocalDate.of(year, month, dayOfMonth);
-//    }
-
 
     private void writeClient(PrintWriter printWriter, Client client) {
         printWriter.println("+++");
@@ -76,11 +66,6 @@ public class ClientDataAccessTXT {
         printWriter.println(client.getPhoneNumber());
         printWriter.println(client.getEmailAdress());
         printWriter.println(client.getBirthDay());
-
-//        printWriter.println(client.getBirthDay().getYear());
-//        printWriter.println(client.getBirthDay().getMonthValue());
-//        printWriter.println(client.getBirthDay().getDayOfMonth());
-
     }
 }
 
